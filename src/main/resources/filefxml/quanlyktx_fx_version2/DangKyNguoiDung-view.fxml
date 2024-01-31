@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="filefxml.quanlyktx_fx_version2.DangKyNguoiDungController">
+   <children>
+      <Label layoutX="326.0" layoutY="-2.0" text="Đăng ký thuê phòng ký túc xá">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="30.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="300.4" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Label layoutX="49.0" layoutY="49.0" text="Họ và tên">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="547.0" layoutY="166.0" text="Email">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="547.0" layoutY="108.0" text="Giới tính">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="547.0" layoutY="49.0" text="Ngày sinh">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="49.0" layoutY="220.0" text="Quê quán">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="49.0" layoutY="166.0" text="Số điện thoại">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="49.0" layoutY="107.0" text="Mã số định danh">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_HoVaTen" layoutX="221.0" layoutY="47.0" prefHeight="30.0" prefWidth="207.0" promptText="Nguyễn Văn A">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tf_MaDinhDanh" layoutX="222.0" layoutY="110.0" prefHeight="30.0" prefWidth="207.0" promptText="CCCD/CMT/Hộ chiếu">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tf_SDT" layoutX="221.0" layoutY="164.0" prefHeight="30.0" prefWidth="207.0" promptText="0388xxx">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tf_QueQuan" layoutX="221.0" layoutY="218.0" prefHeight="30.0" prefWidth="207.0" promptText="Địa chỉ đầy đủ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tf_Email" layoutX="703.0" layoutY="164.0" prefHeight="30.0" prefWidth="196.0" promptText="abc@gmail.com" />
+            <DatePicker fx:id="date_NgaySinh" layoutX="702.0" layoutY="50.0" />
+            <AnchorPane layoutX="702.0" layoutY="98.0" prefHeight="47.0" prefWidth="175.0">
+               <children>
+                  <CheckBox fx:id="checkbox_Nam" layoutY="13.0" mnemonicParsing="false" text="Nam">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkbox_Nu" layoutX="97.0" layoutY="13.0" mnemonicParsing="false" text="Nữ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </AnchorPane>
+            <Button fx:id="bt_TimKiemMaDinhDanh" layoutX="437.0" layoutY="111.0" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="331.2" prefHeight="362.0" prefWidth="960.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="331.0">
+         <children>
+            <Label layoutX="126.0" layoutY="14.0" prefHeight="27.0" prefWidth="74.0" text="Dãy nhà">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="126.0" layoutY="66.0" text="Tầng">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="126.0" layoutY="129.0" text="Loại Phòng ">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="498.0" layoutY="14.0" text="Tiền phòng 1 tháng">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="CBox_DayNha" layoutX="264.0" layoutY="14.0" prefHeight="26.0" prefWidth="99.0" />
+            <ChoiceBox fx:id="CBox_Tang" layoutX="264.0" layoutY="67.0" prefHeight="26.0" prefWidth="99.0" />
+            <ChoiceBox fx:id="CBox_LoaiPhong" layoutX="264.0" layoutY="131.0" prefHeight="26.0" prefWidth="99.0" />
+            <Label fx:id="lb_TienPhong1Thang" layoutX="752.0" layoutY="14.0" text="0.00 VND">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="126.0" layoutY="192.0" text="Phòng">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="CBox_Phong" layoutX="264.0" layoutY="191.0" prefHeight="26.0" prefWidth="99.0" />
+            <Label layoutX="502.0" layoutY="66.0" prefHeight="27.0" prefWidth="158.0" text="Ngày thuê phòng">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="502.0" layoutY="131.0" prefHeight="27.0" prefWidth="158.0" text="Ngày trả phòng">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="498.0" layoutY="191.0" prefHeight="27.0" prefWidth="229.0" text="Tổng tiền phải thanh toán">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_TongTienThanhToan" layoutX="752.0" layoutY="191.0" text="0.00 VND">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="date_NgayThuePhong" layoutX="713.0" layoutY="67.0" />
+            <DatePicker fx:id="date_NgayTraPhong" layoutX="713.0" layoutY="130.0" />
+            <ButtonBar layoutX="643.0" layoutY="281.0" prefHeight="47.0" prefWidth="279.0">
+              <buttons>
+                  <Button fx:id="bt_XoaDuLieuTrenGiaoDien" mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" text="Xoá dữ liệu">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                <Button fx:id="bt_DangKyThongTin" mnemonicParsing="false" prefHeight="38.0" text="Đăng ký">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+              </buttons>
+            </ButtonBar>
+            <CheckBox fx:id="checkbox_TrangThaiThanhToan" layoutX="517.0" layoutY="237.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" text="Đã thanh toán">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </CheckBox>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

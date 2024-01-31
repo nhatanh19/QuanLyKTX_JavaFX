@@ -1,0 +1,25 @@
+Đăng ký phòng ký túc xá thành công (Title)
+Chào ĐOÀN NHẬT ÁNH,
+Bạn đã hoàn thành thủ tục đăng ký phòng ký túc xá thành công.
+
+Thông tin bản thân:
+Họ và tên: ĐOÀN NHẬT ÁNH
+Ngày sinh: 19/02/2005
+Giới tính: Nam
+Quê quán: Triệu Lăng - Triệu Phong - Quảng Trị
+Số CMND/CCCD: 045205003458
+Điện thoại: 0388162234
+
+Thông tin phòng:
+Dãy: 1
+Tầng: 1
+Mã phòng: 101
+Loại phòng: 4/6/8 người
+Giá thuê 1 tháng: 120.000 VND
+
+Thông tin thanh toán tiền phòng:
+Mã hoá đơn:
+Tổng tiền phải thanh toán:
+Đã thanh toán:
+Thời gian đăng ký phòng:
+Thời gian trả phòng:

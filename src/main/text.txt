@@ -1,0 +1,6 @@
+UPDATE `hoadonthuephong` SET `DaThanhToan`='YES' WHERE IdHoaDon = ''
+
+UPDATE `hoadontiennuoc` SET `DaThanhToan`='YES' WHERE IdHoaDon = ''
+
+
+Dùng email thông báo khi ghi số điện xong và khi thanh toán xong

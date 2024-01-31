@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="966.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="filefxml.quanlyktx_fx_version2.QuanLyPhongKTXController">
+   <children>
+      <Label layoutX="323.0" layoutY="-1.0" text="Quản lý các phòng trong ký túc xá" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="bt_DanhSachCacPhongDangDuocThue" layoutX="77.0" layoutY="59.0" mnemonicParsing="false" text="Danh sách các phòng đang được thuê">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt_ChuyenTrangThaiCacPhongDaHetHopDong" layoutX="520.0" layoutY="59.0" mnemonicParsing="false" text="Chuyển trạng thái các phòng đã hết hợp đồng">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table_HienThiThongTin" layoutX="177.0" layoutY="140.0" prefHeight="539.0" prefWidth="611.0">
+         <columns>
+            <TableColumn fx:id="tb_cl_MaSoPhong" prefWidth="136.0" text="Mã số phòng" />
+            <TableColumn fx:id="tb_cl_Tang" prefWidth="93.60002136230469" text="Tầng" />
+            <TableColumn fx:id="tb_cl_Day" prefWidth="80.79998779296875" text="Dãy" />
+            <TableColumn fx:id="tb_cl_LoaiPhong" prefWidth="160.79998779296875" text="Loại phòng (Người)" />
+            <TableColumn fx:id="tb_cl_GiaPhong" minWidth="0.79998779296875" prefWidth="138.4000244140625" text="Giá phòng 1 tháng" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

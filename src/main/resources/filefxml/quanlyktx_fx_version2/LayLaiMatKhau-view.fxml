@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="334.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="filefxml.quanlyktx_fx_version2.QuenMatKhauController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="400.0" prefWidth="201.0">
+               <children>
+                  <ImageView fitHeight="171.0" fitWidth="277.0" layoutX="15.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/imageLogin.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="378.0" prefWidth="399.0">
+               <children>
+                  <Label layoutX="115.0" layoutY="28.0" text="QUÊN MẬT KHẨU" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <GridPane layoutX="26.0" layoutY="99.0" prefHeight="171.0" prefWidth="396.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.2" minWidth="10.0" prefWidth="158.399951171875" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="259.20004882812503" minWidth="10.0" prefWidth="259.20004882812503" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Nhập email tài khoản">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Mã xác nhận" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tf_emailUser" prefHeight="32.0" prefWidth="206.0" promptText="abc@gmail.com" GridPane.columnIndex="1" />
+                        <TextField fx:id="tf_codeAccess" prefHeight="32.0" prefWidth="206.0" promptText="Mã xác nhận được gửi đến email" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Button fx:id="bt_requestCodeAccess" mnemonicParsing="false" text="Nhận mã xác nhận" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="tf_newPassword" prefHeight="32.0" prefWidth="206.0" promptText="abc123" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="Nhập mật khẩu mới" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lb_thongBaoGuiCodeThanhCong" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <ButtonBar layoutX="200.0" layoutY="286.0" prefHeight="40.0" prefWidth="206.0">
+                    <buttons>
+                      <Button fx:id="bt_setPassword" mnemonicParsing="false" text="Xác nhận" />
+                        <Button fx:id="bt_exitForm" mnemonicParsing="false" text="Thoát" />
+                    </buttons>
+                  </ButtonBar>
+                  <Label fx:id="lb_thongBao" layoutX="93.0" layoutY="73.0">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
